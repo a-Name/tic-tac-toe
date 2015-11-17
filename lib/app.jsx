@@ -13,11 +13,11 @@ var Box = React.createClass({
    * @return {ReactElement}
    */
   getInitialState: function() {
-    return {this.props.initialValue};
+    return {value : this.props.initialValue};
   },
   'render': function onRender () {
     return (
-      <button style={btnStyle}>{getInitialState}</button>
+      <button style={btnStyle}>{this.state.value}</button>
     );
   }
 });
