@@ -31,7 +31,6 @@ var Box = React.createClass({
  	},
 
   'render': function onRender () {
-    var timer =  setInterval('changeState()',300);
     return (
       <button style={btnStyle}>{this.state.value}</button>
     );
